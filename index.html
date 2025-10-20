@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashiqur Rubbin Taleb Ayon - Personal Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ashiqur Rubbin Taleb Ayon </h1>
+        <nav>
+            <a href="#info">Personal Info</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#links">Links</a>
+        </nav>
+    </header>
+
+    <section id="info">
+        <h2>Personal Info</h2>
+        <img src="images/me.jpg" alt="Ashiqur Rubbin Taleb Ayon " width="150">
+        <p><strong>Name:</strong> Ashiqur Rubbin Taleb Ayon </p>
+        <p><strong>Background:</strong> Computer Science student at 
+            <a href="https://www.bracu.ac.bd" target="_blank">BRAC University</a>.
+        </p>
+        <p><em>Favorite Quote:</em> “Keep learning — small steps make a big difference.”</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Level</th>
+                <th>Institution</th>
+                <th>Details</th>
+          </tr>
+          <tr>
+              <td>O-Level</td>
+              <td>Oxford English Medium School</td>
+              <td>Completed 7 subjects including Physics, Chemistry, and Mathematics.</td>
+          </tr>
+          <tr>
+              <td>A-Level</td>
+              <td>Oxford English Medium School</td>
+              <td>Currently studying Mathematics  and Physics.</td>
+          </tr>
+          <tr>
+              <td colspan="3">
+                  Now studying Computer Science at BRAC University, learning programming and web development.
+              </td>
+          </tr>
+          </table>
+      </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C</li>
+        <li>Animation: Blender, Moho Pro</li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>Hobbies & Links</h2>
+      <p>I enjoy animation, drawing, and creating websites. Learn more on my 
+        <a href="hobbies.html">Hobbies page</a>.
+      </p>
+
+      <p>Here are some favorite movies:</p>
+      <ol>
+        <li>Inception</li>
+        <li>Interstellar</li>
+        <li>Spirited Away</li>
+      </ol>
+
+      <p>Check out the 
+        <a href="https://discord.gg/your-cse391" target="_blank">CSE 391 Discord</a> community.
+      </p>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" 
+           width="120" alt="JavaScript Logo">
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Ashiqur Rubbin Taleb Ayon</p>
+      <p>Page URL: <span id="url"></span></p>
+      <p>Last Modified: <span id="modified"></span></p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("url").textContent = window.location.href;
+      document.getElementById("modified").textContent = document.lastModified;
+    </script>
+  
+
+</body>
+</html>
