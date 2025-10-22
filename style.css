@@ -1,11 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background: #f9f9f9;
+  background: #fdf8f3;
+  color: #222
 }
 
 header {
-  background: #007acc;
+  background: #d46b08;
   color: white;
   text-align: center;
   padding: 15px;
@@ -15,9 +16,11 @@ nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
+  color:#ffe6c9;
   text-decoration: underline;
 }
 
@@ -26,6 +29,7 @@ section {
   margin: 15px;
   padding: 15px;
   border-radius: 8px;
+  box-shadow:0 0 8px rgba(0,0,0,0.5);
 }
 
 img {
@@ -45,22 +49,42 @@ th, td {
 }
 
 th {
-  background: #007acc;
+  background: #d46b08;
   color: white;
 }
 
 tr:nth-child(even) {
-  background: #f2f2f2;
+  background: #fff3e6;
 }
 
 tr:hover {
-  background: #e6f0ff;
+  background: #fff7d6;
 }
 
 footer {
   text-align: center;
-  background: #222;
+  background: #2f2f2f;
   color: white;
   padding: 10px;
   margin-top: 20px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav a{
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover{
+  background: rgba(255,255,255,0.2);
+  color: #fff7d6
+}
+
+nav a.active{
+  background: white;
+  color: #d46b08;
 }
